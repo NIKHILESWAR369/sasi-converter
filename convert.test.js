@@ -9,4 +9,6 @@ test('handles non-numerical values', () => {
     expect(()=> convert('ten')).toThrow("Invalid amount"); });
 test('handles non-numerical values', () => {
     expect(()=> convert('10n')).toThrow("Invalid amount"); });
+test('handles non-numerical values', () => {
+    expect(()=> convert('1en')).toThrow("Invalid amount"); });
 
